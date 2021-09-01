@@ -1,0 +1,31 @@
+Sourabh Task - Registration form
+1.Create a reg form with field name,email,age,address it will be enter from prompt
+2.It will add in a table and there will be a dynamically delete button append to each table then when we click on table it will delete the record
+3.Whenever we click on any record it will highlight in green and clicking again will remove higlight from record
+
+
+Akshita, Siddarth Task-Account opening
+1.Create a acc opening form where user will enter name,telephone number,father name,account type,married status
+2.It will add in a table and there will be a dynamically delete button append to each table record  then when we click on table it will delete the record 
+3.Whenever we click on any accout it will highlight in red and clicking again will remove higlight from record
+
+Vaibhav Task- Admission Form
+1.Create a admission form where user will enter name,father name,mother name,addhar number,date of birth where user will select date from input
+2.It will add in a table and there will be a dynamically delete button append to each table record  then when we click on table it will delete the record 
+3.Whenever we click on any accout it will highlight in blue and clicking again we remove higlight from record
+
+Amit task-Job Application form
+ 1.Create a job form where user will enter name,email,address,telephone number and zip .Value should be enter from prompt
+2.It will add in a table and there will be a dynamically delete button append to each table record  then when we click on table it will delete the record
+3.Whenever we click on any accout it will highlight in yellow and clicking again will remove higlight from record
+
+Afsha,Utkarsh Task- Restaurant Survey form
+ 1.Create a  form where user will enter name,email,age
+2.There will a radio button where user can select how he like the food from 1 to 5
+3.Another radio button where user can select how he like the service from 1 to 5
+4.A textbox where user can enter his suggestion
+5.It will add in a table and there will be a dynamically delete button append to each table record then when we click on table it will delete the record
+
+Points to be consider
+1.Ui must be very good and each person should hava different ui
+2.There should be validation before entering data in table that field should not be empty
