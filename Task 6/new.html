@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="task6.js"></script>
+    <link rel="stylesheet" href="task6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+   background-color:white;
+}
+
+
+.header{
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.3pc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    color: maroon;
+    font-family: 'Permanent Marker', cursive;
+}
+.text{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+input{
+    background-color: cornsilk;
+    height: 50px;
+    width: 700px;
+    font-size: x-large;
+    border-color: crimson;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#search_para
+{
+   text-align: center;
+   font-size: x-large;
+   color:black;
+}
+.highlight
+{
+ 
+ background-color:yellow
+}
+    </style>
+
+  <script>
+      document.addEventListener( 'DOMContentLoaded',function(){
+ var searchpara=document.getElementById("search_para").innerHTML;
+ searchpara=searchpara.toString();
+ document.getElementById("search").onclick =function ()
+ {highlight_word(searchpara)};	
+},false);
+
+function highlight_word(searchpara)
+{
+ var text=document.getElementById("search_text").value;
+ if(text)
+ {
+  var pattern=new RegExp("("+text+")", "gi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("search_para").innerHTML=new_text;
+ }
+}
+
+  </script>
+
+
+</head>
+<body>
+    <div class="main"> 
+        <div class="header">
+            <h2>Task For The Highlighting The Text when we give as input.. </h2>
+        </div>
+        <div id="wrapper">
+            <input type="text" id="search_text" placeholder="Enter the input string to be searched">
+            <input type="button" value="search" id="search">
+        </div>
+            <br>
+        <div class="text">
+                  <p id="search_para">JavaScript is a lightweight, cross-platform, and interpreted scripting language. It is well-known for the development of web pages, 
+                      many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript contains 
+                      a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements.
+                    <br>
+                    <br>
+                      <b>History of JavaScript: </b> It was created in 1995 by Brendan Eich while he was an engineer at Netscape. It was originally going to be named LiveScript 
+                    but was renamed. Unlike most programming languages, the JavaScript language has no concept of input or output. It is designed to run as a scripting language 
+                    in a host environment, and it is up to the host environment to provide mechanisms for communicating with the outside world. The most common host environment is the browser. 
+                </p>
+        </div>     
+    </div>
+
+
+</body>
+</html>

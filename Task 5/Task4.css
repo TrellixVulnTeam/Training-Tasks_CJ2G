@@ -1,0 +1,131 @@
+body{
+   margin:auto;
+   background-color: #cccccc;
+
+    
+
+}
+.header{
+    margin: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background-color: firebrick;
+    padding: 10px;
+    justify-content: center;
+
+}
+.uruk{
+    display: flex;
+    font-size:xx-large;
+    flex-flow: row wrap;
+    float: left;
+    padding: 10pt;
+    justify-content: center;
+    text-transform:uppercase;
+    text-decoration: none;
+    
+  
+}
+.uruk a{
+    text-decoration: none;
+   font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+   
+
+}
+.uruk a p1{
+    width: 150px;
+    height: 300px;
+    text-decoration: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(128, 236, 222, 0.658);
+    border-radius: 25px  80px;
+    /* color: rgb(103, 119, 114); */
+}
+
+.nav{
+    display: flex ;
+    flex-flow: row wrap;
+    width: 800px;
+    margin: auto;
+    padding-top: 1px;
+    height: 60px;
+    justify-content:flex-end;
+
+}
+.item{
+    padding: 10px;
+    margin: auto;
+    justify-content:center;
+
+}
+.item a{
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: x-large ;
+
+}
+
+.img{
+   background-image: url("banner.jpg") ;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* opacity: 0.7; */
+
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+
+}
+.bg{
+   display: flex;
+   flex-flow: column wrap;
+   margin: 10px;
+   opacity: 0.5;
+   background-color: rgb(106, 109, 108);
+}
+
+.typewriter h1 {
+    font-size: xx-large;
+    font-family: 'Rock Salt', cursive;
+    justify-content: center;
+    font-weight: bold;
+    color:rgb(241, 55, 22);
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret .50s step-end infinite;
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

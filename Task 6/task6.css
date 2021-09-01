@@ -1,0 +1,54 @@
+body{
+   background-color:white;
+}
+
+
+.header{
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.3pc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    color: maroon;
+    font-family: 'Permanent Marker', cursive;
+}
+.text{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+input{
+    background-color: cornsilk;
+    height: 50px;
+    width: 700px;
+    font-size: x-large;
+    border-color: crimson;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#search_para
+{
+   text-align: center;
+   font-size: x-large;
+   color:black;
+}
+.highlight
+{
+ 
+ background-color:yellow
+}
