@@ -1,0 +1,134 @@
+body{
+    margin: 10px;
+    /* background: rgba(5, 2, 31, 0.7) ; */
+    background-image: url(image.jpeg);
+    
+
+}
+.container{
+    display: flex;
+    flex-flow: column ;
+    /* background-color: honeydew ; */
+    margin: 10px;
+    padding: 10px;
+    
+    /* height: 50%; */
+    
+}
+
+.header{
+    /* background: rgba(7, 7, 150 ,00.8s); */
+    margin-right: 10px;
+    padding: 10px;
+    color: royalblue;
+    justify-content: center;
+    margin: 10px;
+    color: seashell;
+    font-weight: bolder;
+    /* height: 200px; */
+   
+   
+}
+
+.header h1{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-flow: row;
+}
+
+.about{
+   background:rgba(56, 56, 58, 0.3);
+   padding: 10px;
+   margin: 20px;
+   width: 50%;  
+   color: whitesmoke;
+   justify-content: center;
+ 
+}
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+} 
+
+.about p{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    /* background-color: lightgray; */
+}
+
+/* This is for registration block */
+
+.register{
+    display: flex;
+    flex-flow: column wrap;
+    background:rgba(224, 224, 231, .2);
+    padding: 10px;
+    margin: 20px; 
+    width: 50%;
+    height: ;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.register h2{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.butt {
+    /* background:rgba(16, 200, 233, 0.2); */
+    /* background-color:wheat; */
+    border: none;
+    padding: 20px; 
+    text-decoration: none;
+    display: flex;
+    height: auto;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  } 
+input[type=button]{
+    background-color: wheat
+    /* border: none; */
+    color: #fff;
+    padding: 15px 30px;
+    /* text-decoration: none; */
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size:30px;
+    border: 3px solid #e71809;
+    color: red;
+    /* font-weight: bolder; */
+    border-radius:2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.hover-center-2 {
+    background-image: linear-gradient(0, wheat, #0b33e6);
+    background-size: 0 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+input.hover-center-2:hover{
+    background-size: 100% 100%;
+    color: #fff;
+}
+table{
+    margin: ;
+    border: 2px solid red;
+}
