@@ -1,6 +1,5 @@
 body{
     margin: 10px;
-    /* background: rgba(5, 2, 31, 0.7) ; */
     background-image: url(image.jpeg);
     
 
@@ -8,16 +7,12 @@ body{
 .container{
     display: flex;
     flex-flow: column ;
-    /* background-color: honeydew ; */
     margin: 10px;
     padding: 10px;
-    
-    /* height: 50%; */
     
 }
 
 .header{
-    /* background: rgba(7, 7, 150 ,00.8s); */
     margin-right: 10px;
     padding: 10px;
     color: royalblue;
@@ -25,7 +20,7 @@ body{
     margin: 10px;
     color: seashell;
     font-weight: bolder;
-    /* height: 200px; */
+  
    
    
 }
@@ -59,7 +54,7 @@ body{
     margin: 10px;
     text-align: center;
     font-size: 20px;
-    /* background-color: lightgray; */
+
 }
 
 /* This is for registration block */
@@ -71,7 +66,7 @@ body{
     padding: 10px;
     margin: 20px; 
     width: 50%;
-    height: ;
+    
     justify-content: center;
     border-radius: 20px;
 }
@@ -84,8 +79,6 @@ body{
 
 
 .butt {
-    /* background:rgba(16, 200, 233, 0.2); */
-    /* background-color:wheat; */
     border: none;
     padding: 20px; 
     text-decoration: none;
@@ -99,14 +92,12 @@ body{
 input[type=button]{
     background-color: wheat;
     padding: 15px 30px;
-    /* text-decoration: none; */
     margin: 4px 2px;
     cursor: pointer;
     font-size: 35px;
     border: 3px solid #e71809;
     color: red;
-    /* font-weight: bolder; */
-    /*  */
+
 }
 
 input:focus {
@@ -127,6 +118,6 @@ input.hover-center-2:hover{
     color: #fff;
 }
 table{
-    margin: ;
+    margin: 40px;
     border: 2px solid red;
 }
