@@ -97,18 +97,16 @@ body{
     margin: 10px;
   } 
 input[type=button]{
-    background-color: wheat
-    /* border: none; */
-    /* color: #fff;
-    padding: 15px 30px; */
+    background-color: wheat;
+    padding: 15px 30px;
     /* text-decoration: none; */
-    /* margin: 4px 2px;
+    margin: 4px 2px;
     cursor: pointer;
-    font-size:30px;
+    font-size: 35px;
     border: 3px solid #e71809;
-    color: red; */
+    color: red;
     /* font-weight: bolder; */
-    /* border-radius:2px; */
+    /*  */
 }
 
 input:focus {
