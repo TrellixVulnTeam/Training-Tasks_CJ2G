@@ -9,20 +9,20 @@ body{
     flex-flow: column ;
     margin: 10px;
     padding: 5px;
-    /* background:rgba(233, 233, 236, 0.3); */
 }
 
 .header{
-    margin-right: 10px;
     padding: 10px;
-    /* color: royalblue; */
+    background:rgba(58, 58, 228, 0.7);
+    box-shadow: 10px 10px 5px #aaaaaa;
     justify-content: center;
     margin: 10px;
-    color: seashell;
+    border-radius: 10px;
+    color: orange ;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Permanent Marker', cursive;
-  
+    margin-bottom: 50px;
    
    
 }
@@ -54,8 +54,9 @@ body{
 
 .about h2{
     justify-content: center;
+    font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bolder;
 } 
 
@@ -71,11 +72,10 @@ body{
 .register{
     display: flex;
     flex-flow: column wrap;
-    background:rgba(224, 224, 231, .2);
+    background:rgba(58, 58, 228, 0.4);
     padding: 10px;
     margin: 30px; 
     width: 60%;
-    height: 500px;
     box-shadow: 10px 10px 5px #aaaaaa;
     transform: rotate(-7deg);
     -ms-transform: rotate(-7deg); 
@@ -86,8 +86,10 @@ body{
 
 .register h2{
     text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
     color: white;
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 
@@ -103,13 +105,13 @@ body{
     margin: 10px;
   } 
 input[type=button]{
-    background-color: wheat;
-    padding: 15px 30px;
+    padding: 15px 50px;
     margin: 4px 2px;
     cursor: pointer;
     font-size: 35px;
-    border: 3px solid #e71809;
-    color: red;
+    border: 3px solid orangered;
+    color: orangered;
+    border-radius: 10px;
 
 }
 
@@ -134,19 +136,21 @@ input.hover-center-2:hover{
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    background:rgba(94, 94, 97, 0.5);
+    background:rgba(165, 165, 228, 0.404);
     /* background-color: chartreuse; */
     justify-content: center;
     margin: 50px 80px auto;
     padding: 10px;
-    border: 4px solid red;
+    font-size: 20px;
+    /* border: 4px solid red; */
 }
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color: whitesmoke;
+    color:crimson;
     text-align: center;
+    margin: 20px;
   }
   
   #table td, #table th {
@@ -155,10 +159,7 @@ input.hover-center-2:hover{
     text-align: center;
     font-size: 25px;
   }
-  
-  /* #table tr:nth-child(even){background-color: #f2f2f2;} */
-  
-  /* #table tr:hover {background-color: #ddd;} */
+
   
   #table th {
     padding-top: 12px;
@@ -167,7 +168,7 @@ input.hover-center-2:hover{
     font-size: 22px;
     font-weight: bold;
     background-color: #056944;
-    color: white;
+    color:white;
   }
 
 #btnEdit{
@@ -181,3 +182,7 @@ input.hover-center-2:hover{
     background-color: darkgrey;
     font-size: 30px;
 }
+
+.highlight {
+    background-color: yellow;
+  }

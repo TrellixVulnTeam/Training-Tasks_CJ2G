@@ -16,7 +16,7 @@ function register() {
   cell2.innerHTML=faname;
   cell3.innerHTML=age;
   cell4.innerHTML=rol;
-  cell5.innerHTML='<button id="btnEdit"  onclick=remove()> Delete </button>';
+  cell5.innerHTML='<button id="btnEdit"  onclick=getConfirmation()>Delete </button>';
   a+=1;
 
 }
@@ -26,3 +26,37 @@ function remove(){
     a-=1;
     }
 }
+
+function getConfirmation()
+    {
+        var retVal = confirm("Do you want to continue ?");
+        if (retVal == true)
+        {
+           
+            remove();
+            return true;
+        } 
+        else
+        {
+          
+            return false;
+        }
+    }
+
+function selectText(){
+  var table = document.getElementById('table');
+  for (var i=0;i < table.rows.length;i++){
+   table.rows[i].onclick= function () {
+    if(!this.hilite){
+     this.origColor=this.style.backgroundColor;
+     this.style.backgroundColor='#FFFF33';
+     this.hilite = true;
+    }
+    else{
+     this.style.backgroundColor=this.origColor;
+     this.hilite = false;
+    }
+     }
+  }
+ }
+ 
