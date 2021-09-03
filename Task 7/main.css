@@ -41,10 +41,10 @@ body{
    -ms-transform: rotate(-7deg); 
    -webkit-transform: rotate(-7deg);
    transform: rotate(-7deg);
-   padding: 20px;
+   padding: 10px;
    margin: 30px ;
    width: 60%;  
-   height: 500px;
+   /* height: 500px; */
    box-shadow: 10px 10px 5px #aaaaaa;
    color: whitesmoke;
    justify-content: center;
@@ -61,9 +61,9 @@ body{
 } 
 
 .about p{
-    margin: 10px;
+    margin: 8px;
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
 
 }
 
@@ -89,7 +89,7 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     color: white;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 
@@ -186,3 +186,4 @@ input.hover-center-2:hover{
 .highlight {
     background-color: yellow;
   }
+

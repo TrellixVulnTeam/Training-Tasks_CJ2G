@@ -1,10 +1,10 @@
   
 var a=1;
 function register() {
-  var name = prompt("Please enter your name");
-  var age = prompt("Please enter your age");
-  var rol = prompt("Please enter your rollnumber");
-  var faname = prompt("Please enter your father's name");
+  var name = prompt("Please enter your Full Name");
+  var age = prompt("Please enter your Adhar Number");
+  var rol = prompt("Please enter your Age");
+  var faname = prompt("Please enter your Mobile Number");
   var table=document.getElementById('table')
   var row = table.insertRow(a);
   var cell1 = row.insertCell(0);
@@ -29,7 +29,7 @@ function remove(){
 
 function getConfirmation()
     {
-        var retVal = confirm("Do you want to continue ?");
+        var retVal = confirm("Are you sure want to Delete ?");
         if (retVal == true)
         {
            
@@ -59,4 +59,4 @@ function selectText(){
      }
   }
  }
- 
+
