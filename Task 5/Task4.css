@@ -74,14 +74,13 @@ body{
 }
 
 .img{
-   background-image: url("banner.jpg") ;
+   background-image: url("image/banner.jpg") ;
     height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* opacity: 0.7; */
-
+   
 }
 
 .container{
@@ -94,38 +93,94 @@ body{
 
 }
 .bg{
-   display: flex;
-   flex-flow: column wrap;
+    display: flex;
+    flex-direction: row;
+   
    margin: 10px;
-   opacity: 0.5;
-   background-color: rgb(106, 109, 108);
+   /* opacity: 0.5;
+   background-color: rgb(106, 109, 108); */
 }
 
-.typewriter h1 {
-    font-size: xx-large;
-    font-family: 'Rock Salt', cursive;
+.into{
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: bisque;
+    height: 350px;
     justify-content: center;
-    font-weight: bold;
-    color:rgb(241, 55, 22);
+    padding-bottom: 0;
+}
+.ab{
+    justify-content: center;
+    padding: 20px;
+    background-color: firebrick;
+    display: flex;
     text-align: center;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 2.5s steps(30, end),
-      blink-caret .50s step-end infinite;
-  }
+    flex-direction: column;
+    align-items: center;
+    color: white;
+   
 
-  /* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+}
+.bc{
+    background-color: rgb(3, 42, 116);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+   
+
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    margin-right: 50px;
+    padding: 2px;
+    background-color: tomato;
+}
+.what{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: thistle;
+    /* height: 50%; */
+    flex-direction: row;
+    width: 60%;
+}
+/* .what h3{
+    text-align: center;
+    font-size: xx-large;
+
+}
+.what p{
+    text-align: justify;
+    font-size: 20px;
+    margin: 10px;
+} */
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 40px;
+    padding: 8px;
+    /* width: 50%; */
+    background-color: yellowgreen;
+}
+
+
+.ban{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: auto; */
+    width: 50%;
+    opacity: 0.8;
+}
+.ban img{
+    /* float: left; */
+    /* height: auto; */
+    width: 100%;
+}
