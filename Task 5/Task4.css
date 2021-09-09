@@ -1,15 +1,16 @@
 body{
-   margin:auto;
+/* margin: 0%;
+margin-right: 0%; */
    background-color: #cccccc;
-
-    
-
 }
+
 .header{
-    margin: 5px;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
     display: flex;
     flex-flow: row wrap;
     height: auto;
+    width: auto;
     background-color: firebrick;
     padding: 10px;
     justify-content: center;
@@ -20,7 +21,7 @@ body{
     font-size:xx-large;
     flex-flow: row wrap;
     float: left;
-    padding: 10pt;
+    padding: 10px;
     justify-content: center;
     text-transform:uppercase;
     text-decoration: none;
@@ -37,7 +38,7 @@ body{
 }
 .uruk a p1{
     width: 150px;
-    height: 300px;
+    /* height: 300px; */
     text-decoration: none;
     font-family: 'Gloria Hallelujah', cursive;
     text-shadow: 4px 4px black;
@@ -51,7 +52,7 @@ body{
 .nav{
     display: flex ;
     flex-flow: row wrap;
-    width: 800px;
+    width: auto;
     margin: auto;
     padding-top: 1px;
     height: 60px;
@@ -73,13 +74,16 @@ body{
 
 }
 
-.img{
-   background-image: url("image/banner.jpg") ;
+.imgg{
+    padding: 10px;
+    background-image: url("image/banner.jpg") ;
     height: 700px;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width: auto
    
 }
 
@@ -95,10 +99,8 @@ body{
 .bg{
     display: flex;
     flex-direction: row;
-   
    margin: 10px;
-   /* opacity: 0.5;
-   background-color: rgb(106, 109, 108); */
+
 }
 
 .into{
@@ -119,6 +121,7 @@ body{
     flex-direction: column;
     align-items: center;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    
 
 }
@@ -131,56 +134,105 @@ body{
     flex-direction: column;
     align-items: center;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.section{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row ;
+  
+}
+
+.what{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    margin: 10px;
+    margin-left: 150px;
+    /* height: 1200px; */
    
 
 }
-.section{
-    display: flex;
-    flex-direction: row;
-    margin-left: 8px;
-    margin-right: 50px;
-    padding: 2px;
-    background-color: tomato;
-}
-.what{
-    margin-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: thistle;
-    /* height: 50%; */
-    flex-direction: row;
-    width: 60%;
-}
-/* .what h3{
-    text-align: center;
-    font-size: xx-large;
-
-}
-.what p{
-    text-align: justify;
-    font-size: 20px;
+.offer{
     margin: 10px;
-} */
-.item{
     display: flex;
     flex-flow: row wrap;
-    margin-left: 40px;
-    padding: 8px;
-    /* width: 50%; */
-    background-color: yellowgreen;
+    align-items: center;
+    padding: 5px; 
+   
 }
-
-
+.itemm{
+    font-size: larger;
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 100px;
+}
 .ban{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* height: auto; */
-    width: 50%;
+    width: 40%;
+    
+    margin-right: 20px;
+} 
+.ban img{
+  
+    /* height: 1200px; */
+    width: 100%;
     opacity: 0.8;
 }
-.ban img{
-    /* float: left; */
-    /* height: auto; */
-    width: 100%;
+.cadrss{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blueviolet; */
+    margin:15px;
+    justify-content: center;
+    /* width: 100%; */
+    padding: 10px;
+
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 0 4px 8px 0 rgba(19, 1, 1, 0.2);
+    width: 22%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: arial;
+  }
+  .card img{
+      width: 100%;
+      height: 300px;
+
+  }
+  .card:hover{
+      background-color:lightslategrey;
+  }
+  .card:active{
+      background-color: lightyellow;
+  }
+
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: firebrick;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    background-color:  rgb(3, 42, 116)
+}
+
+    #more {display: none;}
