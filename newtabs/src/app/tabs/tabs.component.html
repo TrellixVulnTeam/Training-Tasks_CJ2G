@@ -1,0 +1,19 @@
+<div class="section">
+  <mat-tab-group
+    [disableRipple]="true"
+    mat-stretch-tabs
+    [selectedIndex]="selected.value"
+    (selectedIndexChange)="selected.setValue($event)"
+  >
+    <div class="mat-tab">
+      <mat-tab
+        *ngFor="let tab of tabs; let index = index"
+        [label]="tab"
+        [ngStyle]="parentStyle"
+      >
+        Contents for {{ tab }} tab
+        <!-- <h1>This is Test</h1> -->
+      </mat-tab>
+    </div>
+  </mat-tab-group>
+</div>

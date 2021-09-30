@@ -1,0 +1,133 @@
+<div style="justify-content: center">
+  <!-- <h1 style="color: royalblue; text-transform: uppercase; text-align: center;">
+    {{ value }}
+  </h1> -->
+</div>
+
+<div class="container">
+  <form [formGroup]="myForm" class="form" (ngSubmit)="onSubmit()" novalidate>
+    <div class="sc">
+      <div class="txt">
+        <h1>Crud Operation Registration Form</h1>
+        <p>Please fill Details.</p>
+      </div>
+      <hr />
+
+      <label class="control-label" for="fname"><b>Full Name</b></label>
+      <input type="text" formControlName="name" placeholder="Enter Full Name" />
+      <br />
+      <span
+        style="color: red"
+        *ngIf="
+          myForm.controls.name.touched &&
+          myForm.controls.name.hasError('required')
+        "
+      >
+        Name is Required
+      </span>
+
+      <br />
+      <label for="email"><b>Email</b></label>
+      <input type="email" formControlName="email" placeholder="Enter Email" />
+      <span
+        style="color: red"
+        *ngIf="
+          myForm.controls.email.touched &&
+          myForm.controls.email.hasError('email')
+        "
+      >
+        Type should be email
+      </span>
+      <span
+        style="color: red"
+        *ngIf="
+          myForm.controls.email.touched &&
+          myForm.controls.email.hasError('required')
+        "
+      >
+        <br />
+        Email is required <br />
+      </span>
+
+      <label for="address"><b>Address</b></label
+      ><br />
+      <textarea
+        type="text"
+        cols="80"
+        rows="3"
+        formControlName="address"
+        name="address"
+      >
+      </textarea>
+      <br />
+      <label for="zip"> <b>Zip Code: </b> </label>
+      <input id="zip" type="text" formControlName="zip" placeholder="Zip" />
+
+      <span
+        style="color: red"
+        *ngIf="
+          myForm.controls.zip.touched &&
+          myForm.controls.zip.hasError('required')
+        "
+      >
+        Enter only Numbers <br />
+      </span>
+      <br />
+      <label for="checkbox">Shows the City</label>
+      <select class="custom-select" formControlName="city">
+        <option value="" disabled>Choose your city</option>
+        <option *ngFor="let city of City" [value]="city.value">
+          {{ city.name }}
+        </option>
+      </select>
+      <br />
+
+      <label for="Gender"><b>Gender</b></label
+      ><br />
+      <input type="radio" name="gender" value="Male" formControlName="gender" />
+      <label style="font-size: 15px"> <b>Male</b> </label>
+      <input
+        type="radio"
+        name="gender"
+        value="Female"
+        formControlName="gender"
+      /><label style="font-size: 15px"><b>Female</b></label>
+      <label for="file">File</label>
+
+      <input
+        formControlName="file"
+        id="file"
+        type="file"
+        class="form-control"
+        (change)="onFileChange($event)"
+      />
+      <br />
+      <br />
+      <hr />
+
+      <p style="font-size: 18px; font-weight: bold">
+        I hereby agree to
+        <a href="#" style="text-decoration: none">Terms & Privacy</a>.
+        <input
+          type="checkbox"
+          formControlName="right"
+          id="acceptTerms"
+          [ngClass]="{ 'is-invalid': onSubmit && myForm.controls.right.errors }"
+        />
+        <span
+          *ngIf="onSubmit && myForm.controls.right.errors"
+          class="invalid-feedback"
+          >Accept Ts & Cs is required
+        </span>
+      </p>
+      <div></div>
+
+      <div class="b">
+        <button type="submit" class="registerbtn" [disabled]="myForm.invalid">
+          Submit
+        </button>
+        <button type="reset" class="reset" (click)="reset()">Reset</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,45 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 50rem;
+$width: 50rem;
+.section {
+  width: $myWidth;
+}
+// .mat-tab-labels {
+//   min-width: auto !important;
+//   div {
+//     border: 2px solid #fff;
+//     background-color: #404040;
+//     &.mat-tab-label-active {
+//       background-color: #3aafa9;
+//       .mat-tab-label-content {
+//         border: none;
+//         background-color: #3aafa9;
+//       }
+//     }
+//     .mat-tab-label-content {
+//       border: none;
+//       color: #fff !important;
+//     }
+//   }
+// }
+
+// .mat-tab-group {
+//   &.mat-primary {
+//     .mat-ink-bar {
+//       background-color: transparent;
+//     }
+//   }
+// }
+
+// .mat-tab-body-wrapper {
+//   min-height: 550px;
+// }
+
+// .mat-tab-label-container {
+//   flex-grow: 0 !important;
+// }
+// .mat-tab-label {
+//   opacity: 1 !important;
+// }
