@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+.left_cards {
+  display: flex;
+  margin: 30px 50px 75px 150px;
+  flex-flow: column wrap;
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+.small_cards {
+  margin-top: 50px;
+  width: 95px;
+  height: 113px;
+  text-align: center;
+  border-radius: 10%;
+  cursor: pointer;
+
+  .num {
+    font-size: 50px;
+    margin-top: 17px;
+  }
+  .pending {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 47px;
+    color: #fff;
+    margin-left: -16px;
+    text-align: center;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+  }
+}
+.mat-card-active {
+  border: 2px solid #cb0c9f;
+  box-shadow: 5px 5px #dcdcdc;
+}
