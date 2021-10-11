@@ -1,0 +1,13 @@
+<mat-card>
+    <div class="chiplist">
+        <mat-chip-list aria-label="Color selection">
+            <mat-chip *ngFor="let category of categories" #chip="matChip" class="chip"
+                [ngClass]="{'active':category.name==categoryName}" (click)="changeSelected($event)">
+                {{category.name}}
+            </mat-chip>
+        </mat-chip-list>
+
+    </div>
+    <!-- {{categoryName}} -->
+    <app-data [category]="categoryName"></app-data>
+</mat-card>

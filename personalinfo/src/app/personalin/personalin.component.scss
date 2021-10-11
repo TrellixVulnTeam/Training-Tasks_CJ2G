@@ -1,0 +1,33 @@
+.chiplist {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.chip {
+  background-color: rgba(199, 201, 204, 0.7);
+  color: #ffff;
+  height: 55px;
+  font-size: 18px;
+  justify-content: center;
+  width: 250px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 127px;
+}
+
+// .mat-chip-list-wrapper {
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: center;
+//   margin: 20px;
+// }
+
+.active {
+  background-color: #e63ebe;
+}
+
+.mat-standard-chip {
+  margin: 20px;
+}

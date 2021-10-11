@@ -1,0 +1,83 @@
+<!-- <p>data works!</p>
+{{category}} -->
+<ng-container *ngTemplateOutlet="
+    category == 'Personal Info'
+        ? personalinfo
+        : category === 'Contact Info'
+        ? cotactinfo
+        : category === 'Compulsory Subjects'
+        ? compulsorysubjects
+        : category === 'Elective Subjects'
+        ? electivesubjects
+        : goals
+    ">
+</ng-container>
+<ng-template #personalinfo>
+    <div class="cantainer">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Placeholder" value="AARYAN" readonly autofocus />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Placeholder" value="CHHIMPA" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Enrollment Code</mat-label>
+            <input matInput placeholder="Placeholder" value="KPSU1150" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date Of Admission</mat-label>
+            <input type="text" matInput placeholder="Placeholder" value="4 Feb 2016" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Gender</mat-label>
+            <input type="text" matInput placeholder="Placeholder" value="Male" readonly />
+        </mat-form-field>
+    </div>
+</ng-template>
+<ng-template #cotactinfo>
+    <!-- <p>contact info</p> -->
+    <div class="cantainer">
+        <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input matInput value="A-19, Tulsi Nagar, Shastri Nagar, JAIPUR" readonly autofocus />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>State</mat-label>
+            <input matInput value="Rajasthan" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>City</mat-label>
+            <input matInput value="JAIPUR" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Country</mat-label>
+            <input type="text" matInput value="India" readonly />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Pincode</mat-label>
+            <input type="" matInput value="302039" readonly />
+        </mat-form-field>
+    </div>
+</ng-template>
+<ng-template #compulsorysubjects>
+    <mat-list role="list" class="cantainer">
+        <mat-list-item role="listitem" *ngFor="let subject of Numberofsubjects">
+            <mat-icon matListIcon>note</mat-icon>
+            <div mat-line> {{subject.name}}</div>
+        </mat-list-item>
+    </mat-list>
+
+</ng-template>
+<ng-template #electivesubjects>
+    <mat-list role="list" class="cantainer">
+        <mat-list-item role="listitem" *ngFor="let subject of Numberofsubjects">
+            <mat-icon matListIcon>note</mat-icon>
+            <div mat-line> {{subject.name}}</div>
+        </mat-list-item>
+    </mat-list>
+</ng-template>
+<ng-template #goals>
+    <p>goals</p>
+</ng-template>
