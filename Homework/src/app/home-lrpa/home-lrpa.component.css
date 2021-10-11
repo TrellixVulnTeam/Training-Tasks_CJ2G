@@ -1,0 +1,78 @@
+.main-body {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card-tag-body {
+  margin: 0;
+}
+
+::ng-deep .mat-tab-label-content {
+  color: #cb0c9f;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.mat-card-image {
+  width: 275px;
+  height: 170px;
+  border-radius: 15px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+::ng-deep .mat-card-image:first-child {
+  margin-top: 0px !important;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+.card-group {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 0px 20px 25px rgb(6 3 3 / 15%);
+  border-radius: 12px;
+  justify-content: space-evenly;
+}
+
+.card-tag {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  height: 30px;
+  background: #cb0c9f;
+  box-shadow: 0px 4px 11px rgb(0 0 0 / 25%);
+  border-radius: 6.08403px 6.08403px 0px 0px;
+  text-align: center;
+  padding: 10px 20px 0px 20px;
+  margin-left: 10px;
+}
+
+.mat-card {
+  padding: 0;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.mat-card-subtitle {
+  display: flex;
+  margin-top: 20px !important;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.mat-card-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mat-card-header {
+  display: block;
+}

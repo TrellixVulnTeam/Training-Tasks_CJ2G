@@ -1,0 +1,81 @@
+<div class="main-body">
+  <div class="card-tag-body">
+    <p class="card-tag">Learn</p>
+  </div>
+  <div class="card-group">
+    <mat-card *ngFor="let item of learn">
+      <div class="img-base">
+        <a href="#"> <img mat-card-image [src]="item.img" alt="subject" /></a>
+      </div>
+      <mat-card-content>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+          <mat-card-subtitle>
+            <div>{{ item.subtitle }}</div>
+            <div>{{ item.no_lect }}</div></mat-card-subtitle
+          >
+        </mat-card-header>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="main-body">
+  <div class="card-tag">Reinforce</div>
+  <div class="card-group">
+    <mat-card *ngFor="let item of learn">
+      <div class="img-base">
+        <img mat-card-image [src]="item.img" alt="subject" />
+      </div>
+      <mat-card-content>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+          <mat-card-subtitle>
+            <div>{{ item.subtitle }}</div>
+            <div>{{ item.no_lect }}</div></mat-card-subtitle
+          >
+        </mat-card-header>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="main-body">
+  <div class="card-tag">Practice</div>
+  <div class="card-group">
+    <mat-card *ngFor="let item of learn">
+      <div class="img-base">
+        <img mat-card-image [src]="item.img" alt="subject" />
+      </div>
+      <mat-card-content>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+          <mat-card-subtitle>
+            <div>{{ item.subtitle }}</div>
+            <div>{{ item.no_lect }}</div></mat-card-subtitle
+          >
+        </mat-card-header>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="main-body">
+  <div class="card-tag">Apply</div>
+  <div class="card-group">
+    <mat-card *ngFor="let item of learn">
+      <div class="img-base">
+        <img mat-card-image [src]="item.img" alt="subject" />
+      </div>
+      <mat-card-content>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+          <mat-card-subtitle>
+            <div>{{ item.subtitle }}</div>
+            <div>{{ item.no_lect }}</div></mat-card-subtitle
+          >
+        </mat-card-header>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

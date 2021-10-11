@@ -8,9 +8,10 @@ import { HomeworksComponent } from './homeworks/homeworks.component';
 import { MaterialsModule } from './materials/materials.module';
 import { PendingComponent } from './component/pending/pending.component';
 import { OverdueComponent } from './component/overdue/overdue.component';
+import { AnimationsDirective } from './animations.directive';
 
 @NgModule({
-  declarations: [AppComponent, HomeworksComponent, PendingComponent, OverdueComponent],
+  declarations: [AppComponent, HomeworksComponent, PendingComponent, OverdueComponent, AnimationsDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
