@@ -1,0 +1,37 @@
+.home-body {
+  background: #fff;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  // margin: 20px;
+  font-size: larger;
+}
+::ng-deep .mat-tab-labels {
+  justify-content: space-around !important;
+}
+
+.chiplist {
+  display: flex;
+  flex-flow: row nowrap;
+  // justify-content: center;
+  margin: 20px;
+}
+
+.chip {
+  background-color: rgba(199, 201, 204, 0.7);
+  color: #ffff;
+  height: 40px;
+  font-size: 18px;
+  justify-content: center;
+  width: 200px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 127px;
+}
+
+.active {
+  background-color: #e63ebe;
+}
+
+// .mat-standard-chip {
+//   margin: 20px;
+// }

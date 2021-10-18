@@ -1,0 +1,22 @@
+<div class="body">
+    <div class="home-body">
+        <mat-tab-group (selectedTabChange)="onTabChange($event)" animationDuration="0.3ms" [color]="'accent'">
+            <mat-tab *ngFor="let assing of assingments" label={{assing.name}}>
+            </mat-tab>
+        </mat-tab-group>
+        <mat-card>
+            <div class="chiplist">
+                <mat-chip-list aria-label="Color selection">
+                    <mat-chip *ngFor="let category of categories" class="chip"
+                        [ngClass]="{'active':category.name==categoryName}" (click)="changeSelected($event)">
+                        {{category.name}}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+
+
+            <app-datacomonent [category]="categoryName" [assing]="assing"></app-datacomonent>
+        </mat-card>
+    </div>
+
+</div>

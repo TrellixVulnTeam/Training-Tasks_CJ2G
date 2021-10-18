@@ -1,0 +1,79 @@
+<ng-container *ngTemplateOutlet="
+    category == 'Pending'
+        ? Pending
+        : category === 'Overdue'
+        ? Overdue
+        : Submitted
+    ">
+</ng-container>
+<p>{{assing}}.{{category}} </p>
+
+<ng-template #Pending>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title>This is {{subject.button}} of the new topic. </mat-card-title>
+                    <mat-card-subtitle>This is the par of the science work part</mat-card-subtitle>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image}}" style="height: 70px;width: 80px;">
+                    <mat-card-title>{{subject.name}}</mat-card-title>
+                </div>
+            </div>
+            <mat-card-footer>
+                <div class="date">07/oct/2021</div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+</ng-template>
+<ng-template #Overdue>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title>This is {{subject.button}} of the new topic. </mat-card-title>
+                    <mat-card-subtitle>This is the par of the science work part</mat-card-subtitle>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image}}" style="height: 70px;width: 80px;">
+                    <mat-card-title>{{subject.name}}</mat-card-title>
+                </div>
+            </div>
+            <mat-card-footer>
+                <div class="date">07/oct/2021</div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+
+</ng-template>
+<ng-template #Submitted>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title>This is {{subject.button}} of the new topic. </mat-card-title>
+                    <mat-card-subtitle>This is the par of the science work part</mat-card-subtitle>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image}}" style="height: 70px;width: 80px;">
+                    <mat-card-title>{{subject.name}}</mat-card-title>
+                </div>
+            </div>
+            <mat-card-footer>
+                <div class="date">07/oct/2021</div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+</ng-template>
