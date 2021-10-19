@@ -1,0 +1,84 @@
+<!-- <p>cards works!</p> -->
+<ng-container *ngTemplateOutlet="
+    category == 'Pending'
+        ? Pending
+        : category === 'Overdue'
+        ? Overdue
+        : Submitted
+    ">
+</ng-container>
+<!-- <p>{{category}} </p> -->
+
+
+<ng-template #Pending>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number" [ngStyle]="{'background':subject.bgcolor}">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title style="text-transform: capitalize;">This is {{subject.code}} </mat-card-title>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image.url}}" alt="{{subject.image.name}}" style="height: 60px;width: 70px;">
+                </div>
+            </div>
+            <mat-card-footer>
+                <mat-card-subtitle> Dueration:{{subject.time}}</mat-card-subtitle>
+                <div class="date">07/oct/2021<br>
+                    {{subject.name}}
+                </div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+</ng-template>
+<ng-template #Overdue>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number" [ngStyle]="{'background':subject.bgcolor}">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title style="text-transform: capitalize;">This is {{subject.code}} </mat-card-title>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image.url}}" alt="{{subject.image.name}}" style="height: 60px;width: 70px;">
+                </div>
+            </div>
+            <mat-card-footer>
+                <mat-card-subtitle> Dueration:{{subject.time}}</mat-card-subtitle>
+                <div class="date">07/oct/2021<br>
+                    {{subject.name}}
+                </div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+
+</ng-template>
+<ng-template #Submitted>
+    <div class="subject_card">
+        <mat-card class="subject" *ngFor="let subject of number" [ngStyle]="{'background':subject.bgcolor}">
+            <div class="card_content">
+                <mat-card-content>
+                    <mat-card-title style="text-transform: capitalize;">This is {{subject.code}} </mat-card-title>
+                </mat-card-content>
+                <div class="subject_head">
+                    <img src="{{subject.image.url}}" alt="{{subject.image.name}}" style="height: 60px;width: 70px;">
+                </div>
+            </div>
+            <mat-card-footer>
+                <mat-card-subtitle> Dueration:{{subject.time}}</mat-card-subtitle>
+                <div class="date">07/oct/2021<br>
+                    {{subject.name}}
+                </div>
+                <div class="button" align="end">
+                    {{subject.button}}
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+</ng-template>

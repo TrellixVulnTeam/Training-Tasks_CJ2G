@@ -1,0 +1,11 @@
+<!-- <p>assessment works!</p> -->
+<div class="home-body">
+    <mat-tab-group (selectedTabChange)="onTabChange($event)" animationDuration="0.3ms" [color]="'accent'"
+        (click)="changeSelected($event)">
+        <mat-tab *ngFor="let category of categories" label={{category.name}}>
+        </mat-tab>
+    </mat-tab-group>
+    <app-cards [category]="categoryName"></app-cards>
+    <!-- {{categoryName}} -->
+
+</div>
